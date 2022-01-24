@@ -1,4 +1,4 @@
-
+ï»¿
 #include "WindowsPrerequisites.h"
 #include <cassert>
 #include <sstream>
@@ -53,7 +53,7 @@ constexpr const TCHAR* WINDOW_CLASS_NAME = TEXT("RUNTIME_WINDOW");
     constexpr int largeIconSize = 64;
     constexpr int smallIconSize = 16;
 
-    // Šg’£ƒEƒBƒ“ƒhƒEƒNƒ‰ƒX‚Ìİ’è
+    // æ‹¡å¼µã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã‚¯ãƒ©ã‚¹ã®è¨­å®š
     WNDCLASSEX windowClassEX = {};
 
     if (!GetWindowClassInfo(windowClassEX, hInstance))
@@ -82,7 +82,7 @@ constexpr const TCHAR* WINDOW_CLASS_NAME = TEXT("RUNTIME_WINDOW");
 
 [[nodiscard]] static bool AdjustApplicationWindowRect(DWORD style, HWND hParentWindow, RECT& rect)
 {
-    // w’è‚³‚ê‚½ƒNƒ‰ƒCƒAƒ“ƒg—Ìˆæ‚ğŠm•Û‚·‚é‚½‚ß‚É•K—v‚ÈƒEƒBƒ“ƒhƒEÀ•W‚ğŒvZ
+    // æŒ‡å®šã•ã‚ŒãŸã‚¯ãƒ©ã‚¤ã‚¢ãƒ³ãƒˆé ˜åŸŸã‚’ç¢ºä¿ã™ã‚‹ãŸã‚ã«å¿…è¦ãªã‚¦ã‚£ãƒ³ãƒ‰ã‚¦åº§æ¨™ã‚’è¨ˆç®—
 
     BOOL hasMenu = FALSE;
     UINT dpi = 0;
@@ -124,7 +124,7 @@ constexpr const TCHAR* WINDOW_CLASS_NAME = TEXT("RUNTIME_WINDOW");
     int width,
     int height)
 {
-    // ƒEƒBƒ“ƒhƒE‚ğ¶¬
+    // ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã‚’ç”Ÿæˆ
     HWND hWindow = ::CreateWindow(
         WINDOW_CLASS_NAME,
         TEXT("Win32"),
